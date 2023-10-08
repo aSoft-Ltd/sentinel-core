@@ -18,7 +18,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api(projects.sentinelRegistrationApiCore)
+                api(projects.sentinelRegistrationCore)
                 api(ktor.client.core)
             }
         }
