@@ -2,7 +2,6 @@ import kommander.expect
 import kommander.expectFailure
 import koncurrent.later.await
 import kotlinx.coroutines.test.runTest
-import sentinel.RegistrationApi
 import sentinel.exceptions.UserAlreadyCompletedRegistrationException
 import sentinel.exceptions.UserDidNotBeginRegistrationException
 import sentinel.params.SignUpParams
