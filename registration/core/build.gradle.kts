@@ -20,6 +20,7 @@ kotlin {
             dependencies {
                 api(projects.sentinelReceptionApiCore)
                 api(libs.identifier.legal.dtos)
+                api(libs.kase.response.core)
             }
         }
 

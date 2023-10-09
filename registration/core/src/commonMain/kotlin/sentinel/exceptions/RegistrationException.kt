@@ -1,3 +1,5 @@
 package sentinel.exceptions
 
-abstract class RegistrationException(message: String) : Exception(message)
+import kase.ResponseException
+
+abstract class RegistrationException(override val message: String) : ResponseException()
