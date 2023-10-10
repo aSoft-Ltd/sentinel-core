@@ -2,10 +2,14 @@ package sentinel
 
 class RegistrationActionMessage {
 
-    class SignUp(private val email: String) {
-        val begin by lazy { "Beginning signing process for $email" }
+    class Action(val begin: String) {
         val failed by lazy { "$begin Failed" }
         val passed by lazy { "$begin Succeeded" }
     }
-    fun signUp(email: String) = SignUp(email)
+
+    fun signUp(email: String) = Action("Beginning signing process for $email")
+
+    fun sendVerificationLink(email: String) = Action("Sending verification link to $email")
+
+    fun verify(email: String) = Action("Verifying user with $email")
 }
