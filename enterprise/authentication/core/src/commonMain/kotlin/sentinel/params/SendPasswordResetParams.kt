@@ -1,14 +1,11 @@
 @file:JsExport
 package sentinel.params
 
-import identifier.Email
-import kollections.List
-
-import kotlinx.serialization.Serializable
 import kotlin.js.JsExport
+import kotlinx.serialization.Serializable
 
 @Serializable
-data class SendPasswordResetParams (
+data class SendPasswordResetParams(
     val email: String,
     val url: String,
 )

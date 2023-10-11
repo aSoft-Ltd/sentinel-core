@@ -1,7 +1,8 @@
 package sentinel
 
 class RegistrationEndpoint(base: String) {
-    private val core = "$base/registration"
+
+    private val core by lazy { "$base/registration" }
 
     fun signUp() = "$core/sign-up"
 

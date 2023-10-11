@@ -25,5 +25,5 @@ rootProject.name = "sentinel-core"
 
 includeSubs(base = "sentinel-reception", path = "reception", "core")
 includeSubs(base = "sentinel-registration", path = "registration", "core", "flix")
-includeSubs(base = "sentinel-enterprise-authentication-api", path = "enterprise/authentication", "core")
+includeSubs(base = "sentinel-enterprise-authentication", path = "enterprise/authentication", "core", "flix")
 includeSubs(base = "sentinel-enterprise-profile-api", path = "enterprise/profile", "core")
