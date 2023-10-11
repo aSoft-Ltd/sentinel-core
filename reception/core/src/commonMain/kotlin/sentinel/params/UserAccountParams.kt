@@ -3,9 +3,8 @@
 
 package sentinel.params
 
-import kollections.List
-import kotlinx.serialization.Serializable
 import kotlin.js.JsExport
+import kotlinx.serialization.Serializable
 
 /**
  * @param loginId can be a username/email/phone
@@ -14,6 +13,5 @@ import kotlin.js.JsExport
 data class UserAccountParams(
     val loginId: String,
     val password: String,
-    val permissions: List<String>,
-    val registrationToken: String? = null
+    val registrationToken: String
 )

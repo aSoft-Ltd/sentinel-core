@@ -12,4 +12,6 @@ class RegistrationActionMessage {
     fun sendVerificationLink(email: String) = Action("Sending verification link to $email")
 
     fun verify(email: String) = Action("Verifying user with $email")
+
+    fun createAccount(email: String) = Action("Create account form $email")
 }
