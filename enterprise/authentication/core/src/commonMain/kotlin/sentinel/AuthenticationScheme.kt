@@ -9,11 +9,8 @@ import sentinel.params.SendPasswordResetParams
 import sentinel.params.SignInParams
 import kotlin.js.JsExport
 
-interface AuthenticationApi {
+interface AuthenticationScheme {
     fun signIn(params: SignInParams): Later<UserSession>
-    fun session(): Later<UserSession>
-    fun signOut(): Later<Unit>
 
-    fun sendPasswordResetLink(email: String): Later<String>
     fun resetPassword(params: PasswordResetParams): Later<PasswordResetParams>
 }
