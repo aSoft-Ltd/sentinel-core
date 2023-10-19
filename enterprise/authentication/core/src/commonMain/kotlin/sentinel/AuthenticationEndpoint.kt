@@ -8,7 +8,7 @@ class AuthenticationEndpoint(base: String) {
 
     fun signOut() = "$core/sign-out"
 
-    fun sendPasswordReset() = "$core/password/send-reset-link"
+    fun sendPasswordResetLink() = "$core/password/send-reset-link"
 
     fun resetPassword() = "$core/password/reset"
 }

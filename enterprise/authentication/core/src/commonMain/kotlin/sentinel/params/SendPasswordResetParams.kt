@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class SendPasswordResetParams(
     val email: String,
-    val url: String,
+    val link: String,
 )
