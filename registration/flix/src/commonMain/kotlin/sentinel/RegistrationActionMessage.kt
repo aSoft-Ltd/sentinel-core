@@ -7,11 +7,11 @@ class RegistrationActionMessage {
         val passed by lazy { "$begin Succeeded" }
     }
 
-    fun signUp(email: String) = Action("Beginning signing process for $email")
+    fun signUp(email: String) = "Beginning signing process for $email"
 
-    fun sendVerificationLink(email: String) = Action("Sending verification link to $email")
+    fun sendVerificationLink(email: String) = "Sending verification link to $email"
 
-    fun verify(email: String) = Action("Verifying user with $email")
+    fun verify(email: String) = "Verifying user with $email"
 
-    fun createAccount(email: String) = Action("Create account form $email")
+    fun createAccount(email: String) = "Create account form $email"
 }
