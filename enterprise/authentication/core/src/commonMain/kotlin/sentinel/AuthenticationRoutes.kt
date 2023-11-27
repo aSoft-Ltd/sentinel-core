@@ -1,6 +1,6 @@
 package sentinel
 
-class AuthenticationEndpoint(base: String) {
+class AuthenticationRoutes(base: String) {
     private val core by lazy { "$base/authentication" }
 
     fun signIn() = "$core/sign-in"
