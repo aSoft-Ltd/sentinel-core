@@ -1,6 +1,6 @@
 package sentinel
 
-class RegistrationRoutes(base: String) {
+class RegistrationEndpoint(base: String) {
 
     private val core by lazy { "$base/registration" }
 
