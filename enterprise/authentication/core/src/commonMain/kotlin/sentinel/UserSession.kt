@@ -7,7 +7,7 @@ import identifier.CorporateDto
 import identifier.IndividualDto
 import kash.Currency
 import kotlinx.serialization.Serializable
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 @Serializable
 data class UserSession(

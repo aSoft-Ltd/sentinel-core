@@ -6,7 +6,7 @@ package sentinel
 import koncurrent.Later
 import sentinel.params.PasswordResetParams
 import sentinel.params.SignInParams
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 interface AuthenticationScheme {
     fun signIn(params: SignInParams): Later<UserSession>

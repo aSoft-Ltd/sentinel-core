@@ -5,7 +5,7 @@ package sentinel
 
 import identifier.OrganisationProfileApi
 import identifier.PersonalProfileApi
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 interface ProfileApi {
     val personal: PersonalProfileApi

@@ -7,7 +7,7 @@ import koncurrent.Later
 import sentinel.params.SignUpParams
 import sentinel.params.UserAccountParams
 import sentinel.params.VerificationParams
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 interface RegistrationScheme {
 

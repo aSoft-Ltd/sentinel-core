@@ -6,7 +6,7 @@ import kotlinx.JsExport
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class SendPasswordResetParams(
-    val email: String,
-    val link: String,
+data class EmailSignUpParams(
+    val name: String,
+    val email: String
 )

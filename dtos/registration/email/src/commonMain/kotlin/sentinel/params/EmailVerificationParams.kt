@@ -2,11 +2,11 @@
 
 package sentinel.params
 
-import kotlinx.JsExport
 import kotlinx.serialization.Serializable
+import kotlinx.JsExport
 
 @Serializable
-data class SendPasswordResetParams(
+data class EmailVerificationParams(
     val email: String,
-    val link: String,
+    val token: String
 )
