@@ -27,7 +27,9 @@ rootProject.name = "sentinel-core"
 includeSubs("sentinel-dtos", "dtos", "reception")
 includeSubs("sentinel-dtos-registration", "dtos/registration", "email", "phone")
 
-includeSubs("sentinel-schemes-registration", "schemes/registration", "core","email", "phone")
+includeSubs("sentinel-schemes-registration", "schemes/registration", "core", "email", "phone")
+includeSubs("sentinel-schemes-enterprise-authentication", "schemes/enterprise/authentication", "core", "email")
+
 // deprecated
 includeSubs(base = "sentinel-reception", path = "reception", "core")
 includeSubs(base = "sentinel-registration", path = "registration", "core", "flix")
