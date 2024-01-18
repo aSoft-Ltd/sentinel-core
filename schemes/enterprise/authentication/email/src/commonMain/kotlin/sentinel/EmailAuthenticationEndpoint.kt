@@ -6,6 +6,8 @@ class EmailAuthenticationEndpoint(base: String) {
     fun signIn() = "$core/sign-in"
     fun session() = "$core/session"
 
+    fun delete() = "$core/delete"
+
     fun signOut() = "$core/sign-out"
 
     fun sendPasswordResetLink() = "$core/password/send-reset-link"

@@ -9,4 +9,6 @@ import sentinel.params.EmailSignInParams
 
 interface EmailAuthenticationScheme : AuthenticationScheme {
     fun signIn(params: EmailSignInParams): Later<UserSession>
+
+    fun delete(params: EmailSignInParams) : Later<EmailSignInParams>
 }

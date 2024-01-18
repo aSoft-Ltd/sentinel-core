@@ -13,4 +13,6 @@ interface PhoneRegistrationScheme : RegistrationScheme {
     fun signUp(params: PhoneSignUpParams): Later<PhoneSignUpParams>
 
     fun verify(params: PhoneVerificationParams): Later<PhoneVerificationParams>
+
+    fun abort(phone: String) : Later<String>
 }
