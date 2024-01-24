@@ -5,5 +5,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class SendVerificationLinkParams(
     val email: String,
-    val link: String
+    val link: String,
+    val meta: String
 )
