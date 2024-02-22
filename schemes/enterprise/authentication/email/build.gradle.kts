@@ -9,7 +9,7 @@ description = "An abstraction of registration api"
 kotlin {
     jvm { library() }
     if (Targeting.JS) js(IR) { library() }
-    if (Targeting.WASM) wasmJs { library() }
+//    if (Targeting.WASM) wasmJs { library() }
 //    if (Targeting.WASM) wasmWasi { }
     val osxTargets = if (Targeting.OSX) osxTargets() else listOf()
     val ndkTargets = if (Targeting.NDK) ndkTargets() else listOf()
