@@ -10,7 +10,7 @@ import sentinel.params.EmailVerificationParams
 
 interface EmailRegistrationScheme : RegistrationScheme {
 
-    fun signUp(params: EmailSignUpParams): Later<EmailSignUpParams>
+    fun signUp(params: EmailSignUpParams): Later<EmailRegistrationCandidateDto>
 
     fun verify(params: EmailVerificationParams): Later<EmailVerificationParams>
 
