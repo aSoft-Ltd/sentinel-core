@@ -13,6 +13,7 @@ import kotlinx.JsExport
 data class UserSession(
     val user: IndividualDto,
     val secret: String,
+    val role: String? = null,
     val company: CorporateDto,
     val currency: Currency,
     val timezone: String,
